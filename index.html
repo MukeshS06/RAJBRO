@@ -49,7 +49,7 @@
     <header class="bg-success text-white py-3">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <h1 class="h3">RAJ ISAI TRAVELS</h1>
+                <h1 class="h3">SRI SAI CABS</h1>
                 <nav>
                     <ul class="nav">
                         <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
@@ -67,18 +67,78 @@
         <div class="container">
             <h3>Explore the World with Us</h3>
             <p class="lead">Discover amazing places at exclusive deals</p>
-            <a href="#contact" class="btn btn-primary btn-lg">Book Your Adventure</a>
-        </div>
-    </div>
+            
 
-        </section>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button-container {
+            position: relative;
+            display: inline-block;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-popup {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid #ccc;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 20px;
+            text-align: left;
+        }
+        .form-popup form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-popup label {
+            margin: 5px 0;
+        }
+        .button-container:hover .form-popup {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div class="button-container">
+        <button>Select Your Cab Choice</button>
+        <div class="form-popup">
+            <form>
+               
+                <input type="text" id="option1" name="option1">
+                <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScKUKEPyu_lhFCBwAHs5VPwXGzMsQ0fGrWBJYVSWMx65K58NA/viewform?usp=sf_link', '_blank')">City Trip</button>
+                
+                <input type="text" id="option2" name="option2">
+                <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfD1-form1/viewform', '_blank')">State Trip</button> 
+                
+                <input type="text" id="option3" name="option3">
+                 <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfD1-form1/viewform', '_blank')">Tour Trip</button>
+                
+            </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
 
         <section id="services" class="my-5">
             <h2 class="mb-4">Our Services</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="Screens.jpg" class="card-img-top" alt="Tour Packages">
+                        <img src="tour.jpg" class="card-img-top" alt="Tour Packages">
                         <div class="card-body">
                             <h5 class="card-title">Tour Packages</h5>
                             <p class="card-text">Explore our curated tour packages to exotic destinations.</p>
@@ -104,33 +164,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-    
-    <title>Google Forms Links</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .button-container {
-            display: inline-block;
-        }
-        button {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <h1>Choose a Google Form</h1>
-    <div class="button-container">
-        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfD1-form1/viewform', '_blank')">Google Form 1</button>
-        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfD2-form2/viewform', '_blank')">Google Form 2</button>
-        <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfD3-form3/viewform', '_blank')">Google Form 3</button>
-    </div>
+        </section> 
 
 
  <style>
@@ -166,13 +200,10 @@
         <section id="about" class="my-5">
             <h2 class="mb-4">About Us</h2>
             <p>We are a travel agency dedicated to providing the best travel experiences. Our team of experts will help you plan the perfect trip.</p>
-            <ul>
-                <br>7 Seater Innova</br>
-                <li>4 seater Etios</li>
-                <li>Address: 1234 Street Name, City, Country</li>
-                <li>Email: chellaraj@gmail.com</li>
-                <li>Phone: +919916979567</li>
-            </ul>
+            <p>7 Seater Innova</p>
+            <p>4 seater Etios</p>
+            <p>Car Sales</p>  
+                
         </section>
     </div>
 
@@ -180,11 +211,13 @@
         <section id="contact" class="my-5">
             <h2>Contact Us</h2>
             <p>If you have any questions or need further information, please feel free to contact us. You can reach us at:</p>
-            <ul>
-                <li>Email: contact@company.com</li>
-                <li>Phone: (123) 456-7890</li>
-                <li>Address: 1234 Street Name, City, Country</li>
-            </ul>
+            
+                <p>Email: contact@company.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 1234 Street Name, City, Country</p>
+                
+                <a href="https://maps.app.goo.gl/GBJF7EXf4f4qENS66" target="_blank">Visit Google Map</a>
+            
             </section>
         </div>
     </div>
@@ -213,9 +246,10 @@
                     </form>
 
         </section>
-
-
     </div>
+
+
+
 
     <footer class="mt-5">
         <div class="container">
@@ -227,26 +261,4 @@
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Initialize the map
-        function initMap() {
-            var mapOptions = {
-                center: {
-                    lat: -34.397,
-                    lng: 150.644
-                },
-                zoom: 8
-            };
-            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-        }
-    </script>
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-</body>
-
 </html>
